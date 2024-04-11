@@ -17,7 +17,6 @@
 /* Background */
 .body {
     background-color: #FFFFFF; /* Pure White */
-    align-self: center;
   }
   
   /* Calculator Display */
@@ -28,10 +27,9 @@
     background-color: #6A5ACD; /* Slate Blue */
     color: #000C66; /* Rich Black */
     vertical-align:text-top;
-    margin-left: 20rem;
     border-radius: 1rem;
     text-align: center;
-    
+    margin-left: 50vb;
   }
   
 input{
