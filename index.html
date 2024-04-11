@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculate me</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>
+                CALCULATE ME
+            </h1>
+        </div>
+        <div class="calculator">
+            <div class="input">
+                <div><input type="text" value id="n1"></div>
+                <div><input type="text" value id="num1"></div>
+                <input type="text" class="opr" id="opr">
+                <div><input type="text" value id="num2"></div>
+                = <input type="text" value id="output">
+            </div>
+            <div>
+                <select type="dropdown" id="operation">
+                    <option value="operation">Operation</option>
+                    <option value="unr">Unary</option>
+                    <option value="bnr">Binary</option>
+                    <option value="basen">Base n</option>
+                </select>
+            </div>
+            <div class="input_buttons">
+                <div class="perblock" id="perblock">
+                    <button onclick="start()">AC</button>
+                    <button onclick="del()">DC</button>
+                    <button onclick="inp('.')">.</button>
+                    <button onclick="inp(7)">7</button>
+                    <button onclick="inp(8)">8</button>
+                    <button onclick="inp(9)">9</button>
+                    <button onclick="inp(4)">4</button>
+                    <button onclick="inp(5)">5</button>
+                    <button onclick="inp(6)">6</button>
+                    <button onclick="inp(1)">1</button>
+                    <button onclick="inp(2)">2</button>
+                    <button onclick="inp(3)">3</button>
+                    <button onclick="inp(0)">0</button>
+                    <button
+                        onclick="inp(3.141592653589793238462643383279502884197)">pi</button>
+                    <button onclick="inp(2.718281828459045)">e</button>
+                    <button onclick="cal()">=</button>
+                </div>
+                <div class="binaryopr" id="binaryopr">
+                    <!--Binary operations-->
+                    <button onclick="bin_opr('+')">+</button>
+                    <button onclick="bin_opr('-')">-</button>
+                    <button onclick="bin_opr('x')">x</button>
+                    <button onclick="bin_opr('/')">/</button>
+                    <button onclick="bin_opr('^')">^</button>
+                    <button onclick="bin_opr('%')">mod</button>
+                    <button onclick="bin_opr('1/n')">^<sup>1/n</sup></button>
+                    <button onclick="bin_opr('nCr')"><sup>n</sup>C<sub>r</sub></button>
+                    <button onclick="bin_opr('nPr')"><sup>n</sup>P<sub>r</sub></button>
+                </div>
+                <div class="unaryopr" id="unaryopr">
+                    <!--Unary operations-->
+                    <div class="buttons">
+                        <button onclick="un_opr('!')">!</button>
+                        <button onclick="un_opr('ln')">ln</button>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="un_opr('Sin')">Sin</button>
+                        <button onclick="un_opr('Cos')">Cos</button>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="un_opr('Tan')">Tan</button>
+                        <button onclick="un_opr('Cot')">Cot</button>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="un_opr('Sec')">Sec</button>
+                        <button onclick="un_opr('Cosec')">Cosec</button>
+                    </div>
+                </div>
+                <div class="basenopr" id="basenopr">
+                    <!--Base N operation-->
+                    <div class="buttons">
+                    <button onclick="inp('A')">A</button>
+                    <button onclick="inp('B')">B</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="inp('C')">C</button>
+                    <button onclick="inp('D')">D</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="inp('E')">E</button>
+                    <button onclick="inp('F')">F</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="base_n_opr('DEC')">DEC</button>
+                    <button onclick="base_n_opr('BIN')">BIN</button>
+                </div>
+                <div class="buttons">
+                    <button onclick="base_n_opr('OCT')">OCT</button>
+                    <button onclick="base_n_opr('HEX')">HEX</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

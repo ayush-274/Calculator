@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* Header Style */
+/* Header Style */
+.header {
+    background-color: #FFFFFF; /* Pure White */
+    color: #000C66; /* Rich Black */
+    text-align: center;
+    padding: 20px;
+  }
+
+
+/* Background */
+.body {
+    background-color: #FFFFFF; /* Pure White */
+    align-self: center;
+  }
+  
+  /* Calculator Display */
+  .calculator {
+    padding: 2rem;
+    width:40rem;
+    height: 20rem;
+    background-color: #6A5ACD; /* Slate Blue */
+    color: #000C66; /* Rich Black */
+    vertical-align:text-top;
+    margin-left: 20rem;
+    border-radius: 1rem;
+    text-align: center;
+    
+  }
+  
+input{
+  text-align: right;
+  border-radius: 0.3rem;
+}
+
+  /* Buttons */
+  button {
+    background-color: #000C66; /* Rich Black */
+    color: #FFFFFF; /* Pure White */
+    width: 3rem;
+    display: inline-block;
+    margin: 0.5rem;
+  }
+  
+
+opr{
+    width: 1rem;    
+}
+
+.input div{
+    display: inline;
+    
+}
+
+.input .opr,#n1{
+    width: 2rem;
+    text-align: center;
+}
+
+.unaryopr{
+  height: 15rem;
+  width:15rem;
+  display:none;
+}
+
+.binaryopr{
+  height: 15rem;
+  width:15rem;
+  display:none;
+}
+
+.basenopr{
+  height: 15rem;
+  width:15rem;
+  display:none;
+}
+
+#n1{
+  display: none;
+}
+
+.perblock{
+  width:15rem;
+  height: 15rem;
+  display: inline-block;
+}
+
+.input_buttons{
+  vertical-align: top;
+}
+
+.buttons{
+  margin:1.5rem;
+}
+
+.basenopr>.buttons{
+  margin:1rem;
+}
+
+select{
+  margin:1rem;
+}
