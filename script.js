@@ -28,6 +28,8 @@ function start(){
             num1.style="display:inline";
             num2.style="display:none";
             opr.style= "display:inline";
+            opr.addEventListener('change',cal());
+            num2.removeEventListener('change',cal());
         }
         else if(sel_mode=="bnr"){
             //alert("binary mode selected!");
@@ -41,6 +43,7 @@ function start(){
             n1.style="display:none";
             num2.style="display:inline";
             document.getElementsByTagName("span").style="display:inline";
+            num2.addEventListener('change',cal());
         }
         else if(sel_mode=="basen"){
             //alert("base-n mode selected!");
@@ -53,6 +56,7 @@ function start(){
             basenopr.style="display:inline-block";
             n1.style="display:inline";
             num2.style="display:none";
+            opr.addEventListener('change',cal());
         }
         else if(sel_mode=="operation"){
             //alert("Enter a mode");
